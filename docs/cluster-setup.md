@@ -20,6 +20,8 @@ This approach was chosen to keep the setup **simple, reproducible, and testable*
   # Navigate to the chart directory
   cd /path/to/your/project/helm-chart
   helm upgrade --install todo-app . --namespace demo --create-namespace
+  # Check that the pod is running (might take ~1 min)
+  kubectl get pods -n demo
   ```
 
 - The provided `values.yaml` file includes:

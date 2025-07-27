@@ -45,7 +45,7 @@ To test that older backups are deleted:
 
 1. Create a dummy file in the `backups/` folder:
    ```bash
-   touch -d "10 days ago" backups/old_backup.sql
+   touch -d "10 days ago" backups/db_backup_test.sql
    ```
 
 2. Run the script again:
